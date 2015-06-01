@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rivekb - Utility build Rivebot Knowledge Base</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/chatbox.css">
+    <link rel="stylesheet" href="./css/stickyFooter.css">
+    
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./js/main/app.js"></script>
+    <script src="./js/main/directives/schrollBottom.js"></script>
+    <script src="./js/main/services/apply.js"></script>
+    <script src="./js/main/controllers/RivebotController.js"></script>
+    
+</head>
+<body ng-app="rivekb" ng-controller="RivebotController">
+<div class="container">
+
+    <header class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="" ng-click="reload()">Reload</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">RiveHub</h3>
+    </header>
+    <article>
+        <div class="row">
+          <img src="./assets/images/rivebot.png" class="img-responsive margin-center">
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="chat-messages" class="messages">
+                  <div class="chatbox-messages" schroll-bottom="messages">
+                    <ol class="discussion">
+                      <li ng-repeat="entry in messages track by $index"
+                          ng-class="entry.fromBot ? 'self' : 'other'">
+                        <div class="avatar">
+                          <img ng-if="entry.fromBot"
+                               src="./assets/icon/icon2.png"/>
+                          <img ng-if="!entry.fromBot"
+                               src="./assets/icon/icon3.png"/>
+                        </div>
+                        <div class="messages">
+                          <p>{{::entry.text}}</p>
+                          <time datetime="2009-11-13T20:00">at {{::entry.timeReceived}}</time>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <form ng-submit="reply(message)" class="message-input-wrapper">
+
+                    <div class="form-group has-success has-feedback">
+
+                      <div class="input-group">
+                        <span class="input-group-addon unread-count">@</span>
+                        <input id="chat-message-box-input" class="form-control" type="text" placeholder="Write something nice!"
+                               ng-model="message" ng-disabled="!botOk">
+
+                      </div>
+                      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                    </div>
+
+                  </form>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; RiveHub 2015</p>
+  </div>
+</footer>
+</body>
+</html>

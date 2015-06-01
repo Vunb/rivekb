@@ -1,0 +1,29 @@
+{
+  "name": "rivekb",
+  "version": "1.0.0",
+  "authors": [
+    "Vu Bao Nhu <nhubaovu@gmail.com>"
+  ],
+  "description": "Rivekb - Utility build RiveScript Knowledge Base",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "Rivekb"
+  ],
+  "license": "MIT",
+  "homepage": "www.rivehub.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0"
+  }
+}

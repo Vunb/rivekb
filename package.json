@@ -1,0 +1,31 @@
+{
+  "name": "rivekb",
+  "version": "1.0.0",
+  "description": "Utility build Rivebot knowledge-base",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 500
+  },
+  "scripts": {
+    "start": "nw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Rivebot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Vunb/rivekb.git"
+  },
+  "author": "Vunb",
+  "license": "MIT",
+  "dependencies": {
+    "nw": "^0.12.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-node-webkit-builder": "^1.0.2"
+  }
+}

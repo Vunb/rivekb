@@ -1,0 +1,66 @@
+! version = 2.0
+
+> begin
+	+ request // This trigger is tested first.
+	- {ok}    // An {ok} in the response means it's okay to get a real reply
+< begin
+
+// The Botmaster's Name
+! var master = @vunb
+
+// Bot Variables
+! var name     = Ngọc
+! var fullname = Bích Ngọc
+! var age      = 1
+! var birthday = Jun 1
+! var sex      = Nữ
+! var location = Hà Nội
+! var city     = Hà Nội
+! var eyes     = Đen
+! var hair     = Đen
+! var hairlen  = Ngắn
+! var color    = Đỏ
+! var band     = BKIndex
+! var author   = BKIndex
+! var job      = robot
+! var website  = www.rivehub.com
+
+// Substitutions
+! sub &quot;    = "
+! sub &apos;    = '
+! sub &amp;     = &
+! sub &lt;      = <
+! sub &gt;      = >
+! sub +         = cộng
+! sub -         = trừ
+! sub /         = nhân
+! sub *         = chia
+! sub anh       = bạn
+! sub chị       = bạn
+! sub mày       = bạn
+! sub cậu       = bạn
+! sub you       = bạn
+! sub u         = bạn
+! sub em        = tôi
+! sub tao       = tôi
+! sub tớ        = tôi
+
+// Person substitutions
+! person i am    = you are
+! person you are = I am
+! person i'm     = you're
+! person you're  = I'm
+! person my      = your
+! person your    = my
+! person you     = I
+! person i       = you
+! person tôi     = bạn
+! person bạn     = tôi
+
+// Set arrays
+! array malenoun   = trai nam
+! array femalenoun = gái nữ
+! array mennoun    = đàn ông con trai
+! array womennoun  = đàn bà con gái phụ nữ
+! array yes        = vâng dạ
+! array no         = không

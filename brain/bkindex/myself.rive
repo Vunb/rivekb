@@ -1,0 +1,30 @@
+// Tell the user stuff about ourself.
+
++ <bot name>
+- Vâng?
+
++ <bot name> *
+- Vâng? {@<star>}
+
++ (tên bạn là gì|bạn tên gì|bạn là ai|cái gì đây)
+- Tôi là <bot name>.
+- Bạn có thể gọi tôi là <bot name>.
+
++ bạn bao [nhiêu] tuổi
+- Tôi <bot age> tuổi.
+- Tôi mới <bot age> tuổi.
+
++ bạn là (@malenoun) hay (@femalenoun)
+- Tôi là <bot sex>.
+
++ bạn là cái gì [vậy]
+- Tôi là một con robot :)
+
++ (bạn là ai|nghề của bạn là gì)
+- Tôi là <bot job>.
+
++ ai (lập trình|viết) ra bạn
+- <bot author>.
+
++ ai là ông chủ *
+- <bot master>.

@@ -2,6 +2,8 @@
 
 Rivekb is a test tool that help build Rivebot knowledge base
 
+![alt tag](https://raw.githubusercontent.com/Vunb/rivekb/master/assets/images/screenshot.png)
+
 ### Version
 1.0.0
 

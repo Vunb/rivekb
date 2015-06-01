@@ -7,6 +7,11 @@ Rivekb is a test tool that help build Rivebot knowledge base
 ### Version
 1.0.0
 
+### Requirement
+
+- Node.js
+- Bower
+
 ### Installation
 
 ```sh

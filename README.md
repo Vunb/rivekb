@@ -9,8 +9,8 @@ Rivekb is a test tool that help build Rivebot knowledge base
 
 ### Requirement
 
-- Node.js
-- Bower
+- Node.js >= v0.12.0
+- Bower >= v1.4.1
 
 ### Installation
 

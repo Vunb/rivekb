@@ -15,7 +15,7 @@ Rivekb is a test tool that help build Rivebot knowledge base
 ### Installation
 
 ```sh
-$ git clone git@github.com:Vunb/rivekb.git
+$ git clone https://github.com/Vunb/rivekb.git
 $ cd rivekb
 $ npm install -d
 $ npm install bower -g

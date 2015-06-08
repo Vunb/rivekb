@@ -18,6 +18,7 @@ Open ***Git Bash*** or ***CMD*** (Command Prompt) on Windows or ***Terminal*** o
 
 ```sh
 git clone https://github.com/Vunb/rivekb.git
+git checkout kb_bkindex
 cd rivekb
 npm install -d
 npm install bower -g

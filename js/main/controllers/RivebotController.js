@@ -24,6 +24,7 @@ angular.module("rivekb")
     }
     
     $scope.reply = function(message) {
+        if(!message) return false;
         var user = "local";
         var reply = bot.reply(user, message);
 
